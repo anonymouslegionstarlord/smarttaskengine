@@ -1,4 +1,2 @@
 from django.contrib import admin
-.models import *
-
-# No models registered yet
+# No custom models to register for this app

@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="glass-card text-center">
+    <span class="badge-custom mb-3 d-inline-block">Level 1 Progressive Django Project</span>
+    <h1 class="display-4 hero-title mb-3">SmartTaskEngine</h1>
+    <p class="lead text-light mb-4">Clean Django task management application featuring task status tracking, categories, priority levels, and dashboard analytics.</p>
+    <div>
+        <a href="/admin/" class="btn btn-primary btn-lg me-2">Admin Panel</a>
+        <a href="/api/auth/me/" class="btn btn-outline-light btn-lg">API Explorer</a>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="glass-card">
+            <h3>🚀 System Features</h3>
+            <ul class="list-unstyled mt-3">
+                <li class='mb-2'>✨ Modular Django Apps Architecture</li><li class='mb-2'>✨ Normalized Database Models & ORM Constraints</li><li class='mb-2'>✨ Custom User Authentication & Admin Panel</li><li class='mb-2'>✨ Comprehensive Input Validation & Security Filters</li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="glass-card">
+            <h3>📡 REST API Endpoints</h3>
+            <div class="mt-3">
+                <div class='d-flex justify-content-between border-bottom border-secondary py-2'><code>POST /api/auth/token/</code><span class='text-muted'>Obtain JWT token for authenticated session</span></div><div class='d-flex justify-content-between border-bottom border-secondary py-2'><code>GET /api/auth/me/</code><span class='text-muted'>Fetch details of current authenticated user profile</span></div><div class='d-flex justify-content-between border-bottom border-secondary py-2'><code>GET /api/core/userprofiles/</code><span class='text-muted'>List and search UserProfile items</span></div><div class='d-flex justify-content-between border-bottom border-secondary py-2'><code>POST /api/core/userprofiles/</code><span class='text-muted'>Create new UserProfile entry</span></div><div class='d-flex justify-content-between border-bottom border-secondary py-2'><code>GET /api/core/userprofiles/{id}/</code><span class='text-muted'>Retrieve detailed record for UserProfile</span></div><div class='d-flex justify-content-between border-bottom border-secondary py-2'><code>PUT /api/core/userprofiles/{id}/</code><span class='text-muted'>Update existing UserProfile entry</span></div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
